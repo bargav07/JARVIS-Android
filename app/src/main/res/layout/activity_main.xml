@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#020b14"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="#1a4a6a"
+        android:textSize="12sp"
+        android:fontFamily="monospace"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="end"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J·A·R·V·I·S"
+        android:textColor="#00c8ff"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.3"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANDROID VOICE ASSISTANT"
+        android:textColor="#1a4a6a"
+        android:textSize="10sp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.2"
+        android:layout_marginTop="4dp"/>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/orb"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STANDBY"
+        android:textColor="#00c8ff"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.2"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="6dp"
+        android:background="@drawable/chip_bg"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listening for your command..."
+        android:textColor="#4a7a9b"
+        android:textSize="13sp"
+        android:fontFamily="monospace"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvReply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Good day. How may I assist?"
+        android:textColor="#00c8ff"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.5"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="2"
+        android:layout_marginTop="8dp">
+
+        <Button android:id="@+id/btnTime"     style="@style/Q" android:text="TIME"/>
+        <Button android:id="@+id/btnCamera"   style="@style/Q" android:text="CAMERA"/>
+        <Button android:id="@+id/btnMaps"     style="@style/Q" android:text="MAPS"/>
+        <Button android:id="@+id/btnMusic"    style="@style/Q" android:text="MUSIC"/>
+        <Button android:id="@+id/btnWeather"  style="@style/Q" android:text="WEATHER"/>
+        <Button android:id="@+id/btnYoutube"  style="@style/Q" android:text="YOUTUBE"/>
+        <Button android:id="@+id/btnWhatsapp" style="@style/Q" android:text="WHATSAPP"/>
+        <Button android:id="@+id/btnTorch"    style="@style/Q" android:text="TORCH"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnStandby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✕ STANDBY"
+        android:textColor="#4a7a9b"
+        android:textSize="10sp"
+        android:fontFamily="monospace"
+        android:background="@drawable/chip_bg"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
